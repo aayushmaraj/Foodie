@@ -1,0 +1,321 @@
+/*-----------------------------------------
+>>> TABLE OF CONTENTS:
+-------------------------------------------
+
+	0. 	Root
+	1. 	Globals
+	2. 	Elements
+	3. 	Header
+	4. 	Navigation
+	4. 	Site Header
+	5. 	Searchbar
+	5. 	Home
+
+------------------------------------------ */
+
+/*	0. Root */
+:root {
+    --foodie-bg: #f8fcff;
+    --foodie-primary: #5bc9bc;
+    --foodie-secondary: red;
+    --foodie-text-color: #363636;
+    --foodie-text-colorsecondary: #5e5e5e;
+    --foodie-link-color: #838282;
+    --foodie-cardtitle-color: #2a636d;
+    --foodie-seperator-color: #2a636d;
+    --foodie-radius: 5px;
+    --foodie-base-font: 16px;
+    --foodie-font-family: "Graphik", -apple-system, system-ui,
+        BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        sans-serif;
+    --foodie-border-color: #f3f3f4;
+}
+
+/*	1. Globals  */
+
+body {
+    background-color: var(--foodie-bg);
+    font-family: var(--foodie-font-family);
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    font-family: "Graphik";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Graphik", sans-serif;
+    color: var(--foodie-text-color);
+}
+
+.container,
+.container-sm {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-sm {
+    max-width: 800px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+nav ul {
+    margin-bottom: 0;
+}
+
+.avatar img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.btn {
+    border-radius: var(--foodie-radius);
+    padding: 9px 28px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.btn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-black {
+    background: black;
+}
+
+.btn-text {
+    color: var(--foodie-link-color);
+}
+
+.btn-text:hover {
+    color: var(--foodie-link-color);
+}
+
+/*	3. Header  */
+header {
+    padding: 32px 0;
+    background-color: var(--foodie-bg);
+    z-index: 9;
+}
+.headerwrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2px;
+}
+
+/* Sticky header */
+header.sticky {
+    position: sticky;
+    top: 0;
+    padding: 20px 0;
+    margin-bottom: 80px;
+}
+header.sticky form {
+    background: none;
+    padding: 0;
+}
+header.sticky form .search-input {
+    width: 800px;
+}
+
+/* site-content */
+.site-title {
+    margin-bottom: 60px;
+}
+
+.site-title h2 {
+    font-family: "graphik", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+/*	4. Images  */
+
+.image.img-1 {
+    position: fixed;
+    top: 85px;
+    right: 0px;
+}
+
+.image.img-2 {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.image.img-3 {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+/*	5. Searchbar */
+
+.main-title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.main-content {
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    background-color: #f4f8fb;
+    padding: 24px;
+}
+
+.search-input {
+    width: 484px;
+    height: 62px;
+    padding: 20px 24px;
+    font-size: 16px;
+    font-weight: 100;
+    border-radius: 5px;
+    border-style: none;
+    color: var(--foodie-text-color);
+    margin-right: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07);
+    position: relative;
+}
+.search-input.top {
+    border: 1px solid var(--foodie-border-color);
+    box-shadow: none;
+    padding: 10px 24px;
+}
+.voice-input {
+    padding-left: 8px;
+}
+
+.search-input:focus {
+    outline: none;
+    border: none;
+}
+
+.search-input::placeholder {
+    color: var(--foodie-text-color);
+}
+
+.btnselectmeals {
+    width: 171px;
+    height: 62px;
+    padding: 20px 16px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: white;
+    font-family: "graphik", sans-serif;
+    font-weight: 100;
+    color: var(--foodie-text-color);
+    margin-right: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-container img {
+    position: absolute;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.btnselectmeals:focus {
+    outline: none;
+    border: none;
+}
+
+.btnselectmeals-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.btnselectmeals-container img {
+    position: absolute;
+    right: 2rem;
+}
+.btn-letscook {
+    width: 180px;
+    height: 62px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: var(--foodie-primary);
+    font-family: "graphik", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+.btn-letscook:hover {
+    background-color: black;
+    transition: all ease-in-out 400ms;
+}
+
+/*	6. login */
+.modal-header {
+    border: 0;
+}
+
+.modal-header img {
+    padding-top: 32px;
+}
+.modal-body h1 {
+    font-size: 32px;
+    font-weight: 400px;
+    text-align: center;
+}
+.modal-body h5 {
+    font-size: 16px;
+    font-weight: 400px;
+    text-align: center;
+    color: var(--foodie-text-colorsecondary);
+}
+
+.modal-footer h5 {
+    font-size: 16px;
+    font-weight: 400px;
+    color: var(--foodie-text-colorsecondary);
+}
+
+.modal-content {
+    justify-content: center;
+    align-items: center;
+}

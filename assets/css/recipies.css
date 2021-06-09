@@ -1,0 +1,76 @@
+.search-pill-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container img {
+    position: unset;
+}
+.search-container .btn-search {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search-pill-wrap .pill-terms {
+    position: absolute;
+    left: 20px;
+    display: flex;
+}
+
+.pill-terms .badge {
+    margin-right: 16px;
+}
+
+.badge {
+    background-color: rgba(91, 201, 188, 0.05);
+    border: 1px solid rgba(91, 201, 188, 0.07);
+    padding: 10px 18px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #363636;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.badge a {
+    padding-left: 24px;
+}
+
+.browse-recipies .card {
+    margin-bottom: 40px;
+}
+
+.card {
+    border: 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.07);
+}
+
+.card-title {
+    color: var(--foodie-cardtitle-color);
+    font-family: "graphik", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.card-text {
+    color: var(--foodie-text-color);
+    font-family: "graphik", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.card .btn-icon {
+    padding-left: 0px;
+}

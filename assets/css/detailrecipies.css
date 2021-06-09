@@ -1,0 +1,79 @@
+.site-title h5 {
+    color: var(--foodie-cardtitle-color);
+}
+.icons-details {
+    margin-top: 38px;
+    margin-bottom: 48px;
+}
+.recipe-content p {
+    font-size: 16px;
+}
+
+.duration h5 {
+    padding-left: 10px;
+}
+
+.seperator {
+    background-color: var(--foodie-seperator-color);
+    height: 1px;
+    margin-top: 64px;
+    margin-bottom: 40px;
+    opacity: 0.4;
+}
+
+.ingredients-list {
+    margin-top: 40px;
+}
+
+.ingredients-header h2 {
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--foodie-text-color);
+}
+
+.time {
+    margin-left: 32px;
+}
+.time span {
+    margin-left: 16px;
+}
+
+.ingredients-list {
+    margin-right: 120px;
+}
+
+.ingredients-list li {
+    margin-bottom: 32px;
+    position: relative;
+}
+.ingredients-list li:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 1px solid #c4c4c4;
+    position: absolute;
+    border-radius: 20px;
+    left: -32px;
+}
+
+.direction-list {
+    margin-bottom: 40px;
+}
+
+.direction-list h2,
+.direction-list p {
+    margin-bottom: 0;
+}
+
+.direction-list h2 {
+    font-size: 34px;
+    color: var(--foodie-text-color);
+    margin-right: 32px;
+}
+
+.direction-header {
+    margin-bottom: 52px;
+}
+.direction-list-img {
+    margin: 40px auto 40px;
+}
